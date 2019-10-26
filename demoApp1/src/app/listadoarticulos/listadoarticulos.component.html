@@ -1,0 +1,13 @@
+<app-listadoarticulos [datos]="productos"></app-listadoarticulos>
+<table border="1">
+    <tr>
+        <td>Codigo</td>
+        <td>Descripcion</td>
+        <td>Precio</td>
+    </tr>
+    <tr *ngFor="let prod of datos">
+        <td>{{prod.Codigo}}</td>
+        <td>{{prod.Descripcion}}</td>
+        <td>{{prod.Precio}}</td>
+    </tr>
+</table>
